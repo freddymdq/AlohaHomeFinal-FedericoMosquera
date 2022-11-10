@@ -326,7 +326,7 @@ button{
 
 @media screen and (max-width:800px){
     .menu-navegacion{
-        width: 30vw;
+        width: 40vw;
     }
     .titulos{
         font-size: 50px;
@@ -357,13 +357,13 @@ button{
 
 /*VALIDACION USUARIO*/
 
-.body {
+.bodyinicio {
 	font-family: 'Roboto', sans-serif;
     background: rgb(9, 63, 33);
     color: white;
 }
 
-.main {
+.maininicio {
 	max-width: 800px;
 	width: 90%;
 	margin: auto;
@@ -479,7 +479,7 @@ button{
 	display: block;
 }
 
-/* ESTILO VALIDACION */
+/* ESTILOS VALIDACION */
 
 .formulario__grupo-correcto .formulario__validacion-estado {
 	color: #1ed12d;
@@ -498,104 +498,13 @@ button{
 .formulario__grupo-incorrecto .formulario__input {
 	border: 3px solid #bb2753;
 }
-
-
-
-/**** RESERVAS ****/
-h2 {
-	text-align: center;
-	color: #042c19;
-	font-family: 'Open Sans', sans-serif;
-  }
-  
-  .mainres {
-	margin-top: 100px;
-	width: 100vw;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-  }
-  .formres {
-	text-align: center;
-	width: 60%;
-	background-color: #efefef;
-	padding: 20px;
-	color: #fff;
-	border-radius: 20px;
-  }
-  .formres input::placeholder {
-	width: 15em;
-	margin: 3px;
-	height: 2em;
-	color: #05491c;
-  }
-  .formres .botonres{
-	margin: 2em 1em;
-	width: 40%;
-	height: 40px;
-	text-transform: uppercase;
-	background-color: #042c19;
-	color: #fff;
-	letter-spacing: 2px;
-	border-radius: 20px;
-	border: none;
-	cursor: pointer;
-  }
-  
-  .botonres:hover{
-	  background-color:#042c19;
-  }
-  
-  .iconsres {
-	width: 100%;
-	margin: auto;
-	display: flex;
-	justify-content: space-around;
-	margin-top: 1em;
-  
-  }
-  .fas {
-	font-size: 2.5em;  
-	border-radius: 50%;
-	padding: 40px;
-  
-  }
-  .datores{
-	color: #073b1e;
-	font-size: 30px;
-	font-weight: bold;
-  }
-  
-  .container-data {
-	display: flex;
-	justify-content: space-around;
-	margin-top: -1em;
-  }
-  
-  .container-data h6 {
-	text-align: center;
-  }
-
-  .btnpago{
-	margin-top: 80px;
-	margin-left: 40%;
-	width: 20%;
-	height: 40px;
-	background-color: #042c19;
-	color: #fff;
-	border-radius: 20px;
-	border: none;
-	cursor: pointer;
-  }
-  
   
 
 /***** TARJETA DE CREDITO *****/
 
 
-body {
-	background:#042c19;
+.body{
+	
 	font-family: 'Lato', sans-serif;
 }
 
@@ -880,3 +789,78 @@ body {
 .formulario-tarjeta .btn-enviar:hover {
 	background:  rgb(2, 43, 2);
 }
+
+/* *******RESERVAS****** */
+
+.mainres {
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  }
+  .formres {
+	text-align: center;
+	width: 90%;
+	background-color: #efefef;
+	padding: 20px;
+	color: #fff;
+	border-radius: 20px;
+  }
+  form input::placeholder {
+	width: 15em;
+	margin: 3px;
+	height: 2em;
+	color: #6c757d;
+  }
+  .formres .botonres {
+	background-color: #119200;
+	margin: 2em 1em;
+	width: 60%;
+	height: 40px;
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing: 2px;
+	border-radius: 20px;
+	border: none;
+	cursor: pointer;
+  }
+  .iconsres {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 1em;
+  
+  }
+  .datores {
+	font-size: 2.5em;  
+	border-radius: 50%;
+	padding: 40px;
+  
+  }
+
+
+  
+  .container-data {
+	display: flex;
+	justify-content: space-around;
+	margin-top: -1em;
+  }
+  
+  .container-data h6 {
+	text-align: center;
+  }
+
+  .btnpago{
+	width: 30%;
+	margin-left: 35%;
+	cursor: pointer;
+	border: none;
+  }
+  .btnpago a{
+	text-decoration: none;
+	color: #fff;
+  }
+  .btnpago:hover{
+	background: #119200;
+  }
