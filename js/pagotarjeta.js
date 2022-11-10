@@ -8,9 +8,7 @@ const tarjeta =document.querySelector('#tarjeta'),
       mesExpiracion =document.querySelector('#tarjeta .mes'),
       yearExpiracion=document.querySelector('#tarjeta .year'),
       ccv=document.querySelector('#tarjeta .ccv');
-
       
-	 
 
 // MOSTRAR FRENTE TARJETA.
 const mostrarFrente = () => {
@@ -31,7 +29,7 @@ tarjeta.addEventListener('click', ()=>{
 });
 
 // SELECTOR MES DINAMICO
-for(let i = 1; i<=12; i+=1){
+for(let i = 1; i<=12; i++){
     let opcion = document.createElement('option');
     opcion.value = i;
     opcion.innerText = i;
@@ -100,7 +98,7 @@ formulario.inputNombre.addEventListener('keyup', (e) => {
 
 // SELECTOR MES
 formulario.selectMes.addEventListener('change', (e)=>{
-    yearExpiracion.textContent = e.target.value.slice(2);
+    mesExpiracion.textContent = e.target.value.slice(2);
     mostrarFrente()
 })
 
@@ -123,3 +121,4 @@ formulario.inputCCV.addEventListener('keyup', ()=>{
 
     ccv.textContent=formulario.inputCCV.value;
 })
+

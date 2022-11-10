@@ -6,7 +6,6 @@ let vacationCalc = document.getElementById('vacationCalc')
 
 vacationCalc.addEventListener('submit', calcGastos)
 
-
 function calcGastos(e) {
 
     e.preventDefault();
@@ -14,6 +13,7 @@ function calcGastos(e) {
     let nombre = document.getElementById('nombre').value,
         dni = document.getElementById('dni').value,
         pasajeros = document.getElementById('pasajeros').value,
+        categoria = document.getElementById('categoria').value,
         noches = document.getElementById('noches').value;
 
     let costoEstadia = (parseInt(unaPersona) * parseInt(pasajeros)) * parseInt(noches);
@@ -34,8 +34,8 @@ function UI(pasajeros, noches, costoEstadia) {
                         <h6>${noches}</h6>
                     </div>
                     <div class="col s4">
-                        <h6>${costoEstadia}</h6>
-                    </div>
+                    <h6>${costoEstadia}</h6>
+                </div>
                 </div>
         `
     result.appendChild(dataPrint)
@@ -87,5 +87,10 @@ let read_localStorage = function () {
     document.querySelector("#email").value = usuario.email
 }
 
-
+let reset = function(){
+    document.querySelector("#nombre").value = "";
+    document.querySelector("#dni").value = "";
+    document.querySelector("#telefono").value = "";
+    document.querySelector("#email").value = "";
+}
 main();

@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Formulario de Tarjeta de Crédito Dinámico</title>
+	<title>Formulario de Tarjeta</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato|Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
+
 <body>
 	<div class="contenedor">
 
@@ -15,7 +18,7 @@
 		<section class="tarjeta" id="tarjeta">
 			<div class="delantera">
 				<div class="logo-marca" id="logo-marca">
-					
+
 				</div>
 				<img src="./multimedia/tarjeta/chip-tarjeta.png" class="chip" alt="">
 				<div class="datos">
@@ -42,14 +45,17 @@
 				<div class="datos">
 					<div class="grupo" id="firma">
 						<p class="label">Firma</p>
-						<div class="firma"><p></p></div>
+						<div class="firma">
+							<p></p>
+						</div>
 					</div>
 					<div class="grupo" id="ccv">
 						<p class="label">CCV</p>
 						<p class="ccv"></p>
 					</div>
 				</div>
-				<p class="leyenda">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum quos vel aperiam velit sit eveniet autem sapiente quia.</p>
+				<p class="leyenda">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum quos vel
+					aperiam velit sit eveniet autem sapiente quia.</p>
 				<a href="#" class="link-banco">www.tubanco.com</a>
 			</div>
 		</section>
@@ -95,11 +101,22 @@
 					<input type="text" id="inputCCV" maxlength="3">
 				</div>
 			</div>
-			<button type="submit" class="btn-enviar">PAGAR</button>
+			<button onclick="mostrar()" type="submit" class="btn-enviar" id="pagar">PAGAR</button>
 		</form>
 	</div>
 
+
+	<script type="text/javascript">
+
+		function mostrar(){
+			swal('RESERVA REALIZADA CON EXITO')
+			
+		}
+
+	</script>
+	
 	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-    <script src="./js/pagotarjeta.js"></script>
+	<script src="./js/pagotarjeta.js"></script>
 </body>
+
 </html>
