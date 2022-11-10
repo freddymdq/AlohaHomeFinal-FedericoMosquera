@@ -1,6 +1,7 @@
 const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 
+
 // Expresiones regulares
 const expresiones = {
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // hasta 40 caracteres y no incluye simbolos
@@ -42,9 +43,7 @@ const validarForm = (evento) => {
         case "telefono":
             valida(expresiones.telefono, evento.target, 'telefono')
         break;
-
     }
-
 }
 
 const valida = (expresion, input, camp) => {
@@ -96,4 +95,7 @@ formulario.addEventListener('submit', (e) => {
     }
     
 });
+
+
+
 

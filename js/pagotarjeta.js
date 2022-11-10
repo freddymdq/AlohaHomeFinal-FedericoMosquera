@@ -22,7 +22,7 @@ const mostrarFrente = () => {
 // BTN ABRIR FORMULARIO
 btnAbrirFormulario.addEventListener('click', () => {
     btnAbrirFormulario.classList.toggle('active');
-    formulario.classList.toggle('active')
+    formulario.classList.toggle('active');
 })
 
 // ROTAR TARJETA
